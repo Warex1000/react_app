@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Counter from "./components/Counter";
+import ClassCounter from "./components/ClassCounter";
 
 function App() {
 
@@ -10,20 +11,14 @@ function App() {
 
   return (
     <div className="App">
-        <Counter/>
-        <Counter/>
-        <Counter/>
-        <Counter/>
+        {/*<Counter/>*/}
+        <ClassCounter/>
+
     </div>
   );
 }
 
 export default App;
-
-// 26:25
-
-
-
 
 // import React, {useState} from "react";
 //
