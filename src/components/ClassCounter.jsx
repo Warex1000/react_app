@@ -32,4 +32,3 @@ class ClassCounter extends React.Component {
 
 export default ClassCounter;
 
-// 30:25
