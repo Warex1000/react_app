@@ -11,9 +11,17 @@ function App() {
 
   return (
     <div className="App">
-        {/*<Counter/>*/}
-        <ClassCounter/>
-
+        <div className="post">
+            <div className="post__content">
+                <strong>1. JavaScript</strong>
+                <div>
+                    JavaScript - Это язык програмирования
+                </div>
+            </div>
+            <div className="post__btns">
+                <button> Удалить пост</button>
+            </div>
+        </div>
     </div>
   );
 }
