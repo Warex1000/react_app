@@ -21,12 +21,18 @@ function App() {
     // ])
 
     const [title, setTitle] = useState('')
-    const bodyInputRef = useRef();
+    const [body, setBody] = useState('')
 
     const addNewPost = (e) => {
         e.preventDefault()
-        console.log(title)
-        console.log(bodyInputRef.current.value)
+        const newPost = {
+            id: Date.now(),
+            title,
+            body
+        }
+        setPosts([...posts, newPost])
+        setTitle('')
+        setBody('')
     }
 
     return (
@@ -41,7 +47,9 @@ function App() {
             />
             {/*Не управляемый/Не контролируемый*/}
             <MyInput
-                ref={bodyInputRef}
+                // ref={bodyInputRef}
+                value={body}
+                onChange={e => setBody(e.target.value)}
                 type="text"
                 placeholder="Описание поста"
             />
@@ -55,7 +63,7 @@ function App() {
 
 export default App;
 
-/*43:20*/
+/*56:00*/
 
 
 
